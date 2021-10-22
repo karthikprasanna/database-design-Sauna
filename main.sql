@@ -1,6 +1,12 @@
 /*Creating and defining the tables*/
+DROP DATABASE IF EXISTS SaunasHotTub;
+CREATE DATABASE SaunasHotTub;
+USE SaunasHotTub;
+
 
 /*Events*/
+DROP TABLE IF EXISTS Events;
+
 CREATE TABLE Events (
     Event_ID INT PRIMARY KEY,
     Event_name VARCHAR(30),
@@ -15,6 +21,7 @@ CREATE TABLE Events (
     Additional_info VARCHAR(100),
     Previous_edition VARCHAR(2)
 );
+DROP TABLE IF EXISTS Event_results;
 
 CREATE TABLE Event_results (
     Result_link VARCHAR(50) PRIMARY KEY, 
@@ -22,6 +29,7 @@ CREATE TABLE Event_results (
     Winner_Male VARCHAR(30),
     Overall_winner VARCHAR(30)
 );
+DROP TABLE IF EXISTS Event_contact_person;
 
 CREATE TABLE Event_contact_person (
     Contact_person_email VARCHAR(50) PRIMARY KEY,
@@ -29,12 +37,16 @@ CREATE TABLE Event_contact_person (
 );
 
 /*Saunas*/
+DROP TABLE IF EXISTS Saunas_and_hot_tubs;
+
 CREATE TABLE Saunas_and_hot_tubs (
     Name VARCHAR(30) PRIMARY KEY, 
     Theme VARCHAR(30),
     Location VARCHAR(30),
     Description VARCHAR(100)
 );
+
+DROP TABLE IF EXISTS Saunas_pictures;
 
 CREATE TABLE Saunas_pictures (
     Name VARCHAR(30) PRIMARY KEY,
@@ -46,10 +58,15 @@ CREATE TABLE Saunas_pictures (
 );
 
 /*Accomodations*/
+
+DROP TABLE IF EXISTS Accomodation1;
+
 CREATE TABLE Accomodation1 (
     Website VARCHAR(50) PRIMARY KEY, 
     Telephone_no INT 
 );
+
+DROP TABLE IF EXISTS Accomodation2;
 
 CREATE TABLE Accomodation2 (
     Hotel_name VARCHAR(30) NOT NULL,
@@ -58,6 +75,8 @@ CREATE TABLE Accomodation2 (
     Bookings INT
 );
 
+DROP TABLE IF EXISTS Hotels;
+
 CREATE TABLE Hotels (
     Website VARCHAR(50) PRIMARY KEY,
     Hotel_name VARCHAR(30) NOT NULL,
@@ -65,6 +84,8 @@ CREATE TABLE Hotels (
 );
 
 /*Participants*/
+DROP TABLE IF EXISTS Participants;
+
 CREATE TABLE Participants (
     Participant_ID INT PRIMARY KEY,
     Team_ID INT NOT NULL,
@@ -76,6 +97,8 @@ CREATE TABLE Participants (
     Age INT
 );
 
+DROP TABLE IF EXISTS Winners;
+
 CREATE TABLE Winners (
     Participant_ID INT PRIMARY KEY, 
     Participant_name VARCHAR(30) NOT NULL,
@@ -84,6 +107,8 @@ CREATE TABLE Winners (
 );
 
 /*Points*/
+DROP TABLE IF EXISTS Points;
+
 CREATE TABLE Points (
     Participant_ID  INT PRIMARY KEY, 
     Gender_category VARCHAR(1) NOT NULL,
@@ -96,6 +121,8 @@ CREATE TABLE Points (
     Total_points INT
 );
 
+DROP TABLE IF EXISTS Country_ranking;
+
 CREATE TABLE Country_ranking (
     Year INT NOT NULL,
     Championship_name VARCHAR(30) NOT NULL,
@@ -104,6 +131,8 @@ CREATE TABLE Country_ranking (
     Country_flag VARCHAR(50),
     Average_points INT
 );
+
+DROP TABLE IF EXISTS Participants_ranking;
 
 CREATE TABLE Participants_ranking (
     Country_code INT NOT NULL, 
@@ -117,10 +146,14 @@ CREATE TABLE Participants_ranking (
 );
 
 /*Presidium*/
+DROP TABLE IF EXISTS Presidium1;
+
 CREATE TABLE Presidium1 (
     Employee_ID INT PRIMARY KEY, 
     Email_id VARCHAR(50) NOT NULL
 );
+
+DROP TABLE IF EXISTS Presidium2;
 
 CREATE TABLE Presidium2 (
     Employee_ID INT PRIMARY KEY, 
