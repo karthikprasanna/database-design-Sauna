@@ -111,7 +111,7 @@ DROP TABLE IF EXISTS Points;
 
 CREATE TABLE Points (
     Participant_ID  INT PRIMARY KEY, 
-    Gender_category VARCHAR(1) NOT NULL,
+    Gender_category VARCHAR(2) NOT NULL,
     Event_ID INT NOT NULL,
     Penalty_points INT,
     Bonus_points INT, 
@@ -122,7 +122,7 @@ CREATE TABLE Points (
 );
 
 DROP TABLE IF EXISTS Country_ranking;
-
+-- loaded
 CREATE TABLE Country_ranking (
     Year INT NOT NULL,
     Championship_name VARCHAR(30) NOT NULL,
@@ -133,16 +133,16 @@ CREATE TABLE Country_ranking (
 );
 
 DROP TABLE IF EXISTS Participants_ranking;
-
+-- loaded
 CREATE TABLE Participants_ranking (
     Country_code INT NOT NULL, 
     Year INT NOT NULL,  
     Championship_name VARCHAR(30) NOT NULL, 
-    Gender_category VARCHAR(1),
+    Gender_category VARCHAR(2),
     Athlete_name VARCHAR(30) NOT NULL, 
     Country_flag VARCHAR(50),
     Distance_run INT,
-    Partcipant_ranking INT
+    Participant_ranking INT
 );
 
 /*Presidium*/
@@ -162,6 +162,69 @@ CREATE TABLE Presidium2 (
     Photo VARCHAR(50),
     Quote VARCHAR(150)
 );
+
+
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2012, 'Moyra Lohoar', 'Ireland', 'ID', null, 989);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2010, 'Perren Elverston', 'South Africa', 'VE', null, 921);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2014, 'Karlie Hilland', 'China', 'FR', null, 928);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2018, 'Genvieve Steedman', 'Peru', 'CN', null, 909);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2012, 'Meredith Brosini', 'Vietnam', 'PE', null, 992);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2012, 'Rutledge Wooddisse', 'Peru', 'CN', null, 980);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2011, 'Herve Gallety', 'Ethiopia', 'ID', null, 913);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2016, 'Harriette Angeli', 'China', 'BR', null, 909);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2013, 'Dalli Calcutt', 'Ukraine', 'PS', null, 930);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2013, 'Romy Cornell', 'Philippines', 'ID', null, 931);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2017, 'Vivianna Middle', 'Sweden', 'CN', null, 944);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2012, 'Hanson Nutbrown', 'Ukraine', 'LY', null, 972);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2018, 'Sigrid Sammonds', 'China', 'MA', null, 999);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2020, 'Sampson Deverale', 'Pakistan', 'AR', null, 994);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2018, 'Concettina Coleborn', 'Dominican Republic', 'FR', null, 988);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2020, 'Frederick Upson', 'Thailand', 'RU', null, 917);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2013, 'Jae Vogt', 'Czech Republic', 'RS', null, 973);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2018, 'Alvinia Gery', 'Indonesia', 'CN', null, 976);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2017, 'Skyler Santostefano.', 'Brazil', 'UA', null, 926);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2019, 'Emile Poppleston', 'Portugal', 'VN', null, 980);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2013, 'Berty Sunnex', 'Indonesia', 'AF', null, 900);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2017, 'Tymon Strewther', 'Philippines', 'CA', null, 933);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2018, 'Bidget Dodds', 'Peru', 'CN', null, 959);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2013, 'Lombard Penwarden', 'Brazil', 'ID', null, 972);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2012, 'Merv Brunesco', 'Yemen', 'ZA', null, 961);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2016, 'Raimund Kittredge', 'Portugal', 'GL', null, 958);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2012, 'Sarene Aleevy', 'Brazil', 'CN', null, 934);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2017, 'Jeanette Thackham', 'Serbia', 'PT', null, 947);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2010, 'Creight McGarry', 'Kazakhstan', 'DE', null, 945);
+insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2017, 'Alfy Maciaszek', 'Japan', 'UA', null, 921);
+
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('ID', 2012, 'Moyra Lohoar', 'F', 'Moyra Lohoar', null, 989, 989);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('VE', 2010, 'Perren Elverston', 'M', 'Perren Elverston', null, 921, 921);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('FR', 2014, 'Karlie Hilland', 'F', 'Karlie Hilland', null, 928, 928);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('CN', 2018, 'Genvieve Steedman', 'F', 'Genvieve Steedman', null, 909, 909);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('PE', 2012, 'Meredith Brosini', 'M', 'Meredith Brosini', null, 992, 992);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('CN', 2012, 'Rutledge Wooddisse', 'M', 'Rutledge Wooddisse', null, 980, 980);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('ID', 2011, 'Herve Gallety', 'M', 'Herve Gallety', null, 913, 913);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('BR', 2016, 'Harriette Angeli', 'F', 'Harriette Angeli', null, 909, 909);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('PS', 2013, 'Dalli Calcutt', 'M', 'Dalli Calcutt', null, 930, 930);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('ID', 2013, 'Romy Cornell', 'F', 'Romy Cornell', null, 931, 931);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('CN', 2017, 'Vivianna Middle', 'F', 'Vivianna Middle', null, 944, 944);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('LY', 2012, 'Hanson Nutbrown', 'M', 'Hanson Nutbrown', null, 972, 972);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('MA', 2018, 'Sigrid Sammonds', 'F', 'Sigrid Sammonds', null, 999, 999);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('AR', 2020, 'Sampson Deverale', 'M', 'Sampson Deverale', null, 994, 994);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('FR', 2018, 'Concettina Coleborn', 'F', 'Concettina Coleborn', null, 988, 988);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('RU', 2020, 'Frederick Upson', 'M', 'Frederick Upson', null, 917, 917);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('RS', 2013, 'Jae Vogt', 'M', 'Jae Vogt', null, 973, 973);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('CN', 2018, 'Alvinia Gery', 'F', 'Alvinia Gery', null, 976, 976);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('UA', 2017, 'Skyler Santostefano.', 'M', 'Skyler Santostefano.', null, 926, 926);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('VN', 2019, 'Emile Poppleston', 'M', 'Emile Poppleston', null, 980, 980);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('AF', 2013, 'Berty Sunnex', 'F', 'Berty Sunnex', null, 900, 900);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('CA', 2017, 'Tymon Strewther', 'M', 'Tymon Strewther', null, 933, 933);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('CN', 2018, 'Bidget Dodds', 'F', 'Bidget Dodds', null, 959, 959);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('ID', 2013, 'Lombard Penwarden', 'M', 'Lombard Penwarden', null, 972, 972);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('ZA', 2012, 'Merv Brunesco', 'M', 'Merv Brunesco', null, 961, 961);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('GL', 2016, 'Raimund Kittredge', 'M', 'Raimund Kittredge', null, 958, 958);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('CN', 2012, 'Sarene Aleevy', 'F', 'Sarene Aleevy', null, 934, 934);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('PT', 2017, 'Jeanette Thackham', 'F', 'Jeanette Thackham', null, 947, 947);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('DE', 2010, 'Creight McGarry', 'M', 'Creight McGarry', null, 945, 945);
+insert into Participants_ranking (Country_code, Year, Championship_name, Gender_category, Athlete_name, Country_flag, Distance_run, Participant_ranking) values ('UA', 2017, 'Alfy Maciaszek', 'M', 'Alfy Maciaszek', null, 921, 921);
 
 insert into Events (Event_ID, Event_name, Date_of_event, Time_of_the_event, Country, City, Venue_of_the_event, Result_link, Category, Contact_person_email, Additional_info, Previous_edition) values (1, 'Bfpbvf', '2020-11-25', '3:16:32', 'Peru', 'Aricapampa', 'Seredeyskiy', 'cbsnews.com', 'M', 'wcroston0@angelfire.com', null, 9);
 insert into Events (Event_ID, Event_name, Date_of_event, Time_of_the_event, Country, City, Venue_of_the_event, Result_link, Category, Contact_person_email, Additional_info, Previous_edition) values (2, 'Orbmbs', '2021-02-16', '4:17:48', 'Russia', 'Trudovoye', 'Regulice', 'shop-pro.jp', 'F', 'glangdridge1@purevolume.com', null, 6);
