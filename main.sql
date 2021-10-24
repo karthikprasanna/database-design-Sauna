@@ -147,14 +147,14 @@ CREATE TABLE Participants_ranking (
 
 /*Presidium*/
 DROP TABLE IF EXISTS Presidium1;
-
+-- loaded
 CREATE TABLE Presidium1 (
     Employee_ID INT PRIMARY KEY, 
     Email_id VARCHAR(50) NOT NULL UNIQUE
 );
 
 DROP TABLE IF EXISTS Presidium2;
-
+-- loaded
 CREATE TABLE Presidium2 (
     Employee_ID INT PRIMARY KEY, 
     Name VARCHAR(30) NOT NULL UNIQUE,
@@ -900,3 +900,66 @@ insert into Winners (Participant_ID, Participant_name, Gender_category, Country)
 insert into Winners (Participant_ID, Participant_name, Gender_category, Country) values (28, 'Jeanette Thackham', 'F', 'Serbia');
 insert into Winners (Participant_ID, Participant_name, Gender_category, Country) values (29, 'Creight McGarry', 'M', 'Kazakhstan');
 insert into Winners (Participant_ID, Participant_name, Gender_category, Country) values (30, 'Alfy Maciaszek', 'M', 'Japan');
+
+insert into Presidium1 (Employee_ID, Email_id) values (1, 'mmcdaid0@flavors.me');
+insert into Presidium1 (Employee_ID, Email_id) values (2, 'gmcquin1@simplemachines.org');
+insert into Presidium1 (Employee_ID, Email_id) values (3, 'dbasset2@cnet.com');
+insert into Presidium1 (Employee_ID, Email_id) values (4, 'awycliff3@cdc.gov');
+insert into Presidium1 (Employee_ID, Email_id) values (5, 'dconerding4@amazon.com');
+insert into Presidium1 (Employee_ID, Email_id) values (6, 'rfoat5@vinaora.com');
+insert into Presidium1 (Employee_ID, Email_id) values (7, 'rchristofle6@yahoo.co.jp');
+insert into Presidium1 (Employee_ID, Email_id) values (8, 'jpaoletto7@wix.com');
+insert into Presidium1 (Employee_ID, Email_id) values (9, 'sbrearton8@cmu.edu');
+insert into Presidium1 (Employee_ID, Email_id) values (10, 'stokell9@a8.net');
+insert into Presidium1 (Employee_ID, Email_id) values (11, 'bsibbea@plala.or.jp');
+insert into Presidium1 (Employee_ID, Email_id) values (12, 'dcarefullb@github.io');
+insert into Presidium1 (Employee_ID, Email_id) values (13, 'srivalantc@blogtalkradio.com');
+insert into Presidium1 (Employee_ID, Email_id) values (14, 'vucchinod@slideshare.net');
+insert into Presidium1 (Employee_ID, Email_id) values (15, 'mcashleye@canalblog.com');
+insert into Presidium1 (Employee_ID, Email_id) values (16, 'mbardf@mysql.com');
+insert into Presidium1 (Employee_ID, Email_id) values (17, 'mscalesg@vkontakte.ru');
+insert into Presidium1 (Employee_ID, Email_id) values (18, 'bjoanh@simplemachines.org');
+insert into Presidium1 (Employee_ID, Email_id) values (19, 'mmilletoni@yelp.com');
+insert into Presidium1 (Employee_ID, Email_id) values (20, 'troycroftj@arstechnica.com');
+insert into Presidium1 (Employee_ID, Email_id) values (21, 'jblankenshipk@sogou.com');
+insert into Presidium1 (Employee_ID, Email_id) values (22, 'gtrahearl@uol.com.br');
+insert into Presidium1 (Employee_ID, Email_id) values (23, 'edandom@nih.gov');
+insert into Presidium1 (Employee_ID, Email_id) values (24, 'mouvern@sitemeter.com');
+insert into Presidium1 (Employee_ID, Email_id) values (25, 'nshowero@altervista.org');
+insert into Presidium1 (Employee_ID, Email_id) values (26, 'ssparep@hostgator.com');
+insert into Presidium1 (Employee_ID, Email_id) values (27, 'rlonglandq@huffingtonpost.com');
+insert into Presidium1 (Employee_ID, Email_id) values (28, 'droizr@oakley.com');
+insert into Presidium1 (Employee_ID, Email_id) values (29, 'cpettingalls@odnoklassniki.ru');
+insert into Presidium1 (Employee_ID, Email_id) values (30, 'hpeegremt@bigcartel.com');
+
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (1, 'Goldarina Guitte', 'Project Manager', 'https://robohash.org/veletaccusamus.png?size=50x50&set=set1', 'nfdo jcrr xeej');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (2, 'Correy Martinelli', 'Subcontractor', 'https://robohash.org/temporibusdolorvelit.png?size=50x50&set=set1', 'bcvc cbhz dhbo');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (3, 'Curry Viel', 'Engineer', 'https://robohash.org/etdoloresenim.png?size=50x50&set=set1', 'ruin ehva bfip');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (4, 'Joyous Todarello', 'Construction Foreman', 'https://robohash.org/accusantiumcorporisducimus.png?size=50x50&set=set1', 'adco mfwi ctow');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (5, 'Malcolm Lound', 'Architect', 'https://robohash.org/vitaererumillum.png?size=50x50&set=set1', 'hjwp dsss udlt');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (6, 'Alissa L''Episcopio', 'Construction Manager', 'https://robohash.org/doloremprovidentomnis.png?size=50x50&set=set1', 'spat ftfd wafv');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (7, 'Mar Gounod', 'Engineer', 'https://robohash.org/occaecatisaepeearum.png?size=50x50&set=set1', 'evhs njii swpv');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (8, 'Dur Ickovic', 'Construction Manager', 'https://robohash.org/aututdistinctio.png?size=50x50&set=set1', 'dnos dhnw dglt');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (9, 'Karil Humes', 'Engineer', 'https://robohash.org/deseruntaquas.png?size=50x50&set=set1', 'rkqv thnb etai');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (10, 'Ode Jeune', 'Subcontractor', 'https://robohash.org/providentetsaepe.png?size=50x50&set=set1', 'zjis xnhw woqd');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (11, 'Shelli Yandle', 'Construction Foreman', 'https://robohash.org/aveniamnihil.png?size=50x50&set=set1', 'mjlh afmo mqqq');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (12, 'Annelise Benford', 'Engineer', 'https://robohash.org/expeditalaboriosamcum.png?size=50x50&set=set1', 'kjgo znro ejxs');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (13, 'Anna Cammomile', 'Architect', 'https://robohash.org/repudiandaeadipsum.png?size=50x50&set=set1', 'jkvg vsnw mkhm');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (14, 'Salvador Degue', 'Construction Foreman', 'https://robohash.org/doloremqueomnisvoluptas.png?size=50x50&set=set1', 'nvsx psgu urex');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (15, 'Lorain Bendon', 'Engineer', 'https://robohash.org/etasperioresdoloribus.png?size=50x50&set=set1', 'rkem fdxj trhk');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (16, 'Vernon Beardshaw', 'Construction Expeditor', 'https://robohash.org/doloremsintnon.png?size=50x50&set=set1', 'qezz xhcm uhnd');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (17, 'Suzanne McMennum', 'Construction Foreman', 'https://robohash.org/etfacilisquis.png?size=50x50&set=set1', 'ciqr xmqe dxgk');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (18, 'Loren Shulver', 'Construction Foreman', 'https://robohash.org/eumerrorat.png?size=50x50&set=set1', 'schm wyjw psae');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (19, 'Cristiano Mullaly', 'Construction Expeditor', 'https://robohash.org/hicutipsam.png?size=50x50&set=set1', 'fkkr mbaj nkwg');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (20, 'Arlee Girardengo', 'Construction Manager', 'https://robohash.org/oditvoluptaset.png?size=50x50&set=set1', 'djeh otjc skht');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (21, 'Valentino Triplet', 'Subcontractor', 'https://robohash.org/atveritatisnon.png?size=50x50&set=set1', 'vuld ormx elsv');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (22, 'Timothee Middlewick', 'Project Manager', 'https://robohash.org/quieavoluptate.png?size=50x50&set=set1', 'zdzb xfzw dkpo');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (23, 'Marvin Broscombe', 'Project Manager', 'https://robohash.org/utminusvoluptas.png?size=50x50&set=set1', 'pdjf culd lxfg');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (24, 'Natassia Roofe', 'Architect', 'https://robohash.org/etevenieteum.png?size=50x50&set=set1', 'ngku bzck ljvx');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (25, 'Nichole Drewes', 'Subcontractor', 'https://robohash.org/cumqueataspernatur.png?size=50x50&set=set1', 'jgbi cxbq zdhq');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (26, 'Jonathan Lasseter', 'Engineer', 'https://robohash.org/quaeratfacilisest.png?size=50x50&set=set1', 'sogg bhpf gjbv');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (27, 'Joana August', 'Electrician', 'https://robohash.org/voluptatibusvoluptatemsequi.png?size=50x50&set=set1', 'eied bwzv matj');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (28, 'Arlyn Sunock', 'Engineer', 'https://robohash.org/repellatbeataeveniam.png?size=50x50&set=set1', 'sqpg eqat wkxr');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (29, 'Wilbur Sim', 'Construction Worker', 'https://robohash.org/velitcumquequidem.png?size=50x50&set=set1', 'eluu mbwb hmcu');
+insert into Presidium2 (Employee_ID, Name, Position, Photo, Quote) values (30, 'Athena Minchenton', 'Construction Expeditor', 'https://robohash.org/vitaequirerum.png?size=50x50&set=set1', 'ojby ngwy jxzd');
+
