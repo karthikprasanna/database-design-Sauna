@@ -22,7 +22,7 @@ CREATE TABLE Events (
     Previous_edition VARCHAR(2)
 );
 DROP TABLE IF EXISTS Event_results;
-
+-- loaded
 CREATE TABLE Event_results (
     Result_link VARCHAR(50) PRIMARY KEY, 
     Winner_Female VARCHAR(30),
@@ -162,6 +162,37 @@ CREATE TABLE Presidium2 (
     Photo VARCHAR(50),
     Quote VARCHAR(150)
 );
+
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('cbsnews.com', 'Moyra Lohoar', 'Moyra Lohoar', 'Moyra Lohoar');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('shop-pro.jp', 'Perren Elverston', 'Perren Elverston', 'Perren Elverston');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('diigo.com', 'Karlie Hilland', 'Karlie Hilland', 'Karlie Hilland');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('walmart.com', 'Genvieve Steedman', 'Genvieve Steedman', 'Genvieve Steedman');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('typepad.com', 'Meredith Brosini', 'Meredith Brosini', 'Meredith Brosini');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('auda.org.au', 'Rutledge Wooddisse', 'Rutledge Wooddisse', 'Rutledge Wooddisse');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('wunderground.com', 'Herve Gallety', 'Herve Gallety', 'Herve Gallety');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('princeton.edu', 'Harriette Angeli', 'Harriette Angeli', 'Harriette Angeli');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('answers.com', 'Dalli Calcutt', 'Dalli Calcutt', 'Dalli Calcutt');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('virginia.edu', 'Romy Cornell', 'Romy Cornell', 'Romy Cornell');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('netlog.com', 'Vivianna Middle', 'Vivianna Middle', 'Vivianna Middle');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('google.de', 'Hanson Nutbrown', 'Hanson Nutbrown', 'Hanson Nutbrown');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('yellowpages.com', 'Sigrid Sammonds', 'Sigrid Sammonds', 'Sigrid Sammonds');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('yolasite.com', 'Sampson Deverale', 'Sampson Deverale', 'Sampson Deverale');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('dagondesign.com', 'Concettina Coleborn', 'Concettina Coleborn', 'Concettina Coleborn');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('netscape.com', 'Frederick Upson', 'Frederick Upson', 'Frederick Upson');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('arizona.edu', 'Jae Vogt', 'Jae Vogt', 'Jae Vogt');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('seesaa.net', 'Alvinia Gery', 'Alvinia Gery', 'Alvinia Gery');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('123-reg.co.uk', 'Skyler Santostefano.', 'Skyler Santostefano.', 'Skyler Santostefano.');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('irs.gov', 'Emile Poppleston', 'Emile Poppleston', 'Emile Poppleston');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('csmonitor.com', 'Berty Sunnex', 'Berty Sunnex', 'Berty Sunnex');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('mashable.com', 'Tymon Strewther', 'Tymon Strewther', 'Tymon Strewther');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('yahoo.com', 'Bidget Dodds', 'Bidget Dodds', 'Bidget Dodds');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('google.ru', 'Lombard Penwarden', 'Lombard Penwarden', 'Lombard Penwarden');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('github.com', 'Merv Brunesco', 'Merv Brunesco', 'Merv Brunesco');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('usda.gov', 'Raimund Kittredge', 'Raimund Kittredge', 'Raimund Kittredge');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('dedecms.com', 'Sarene Aleevy', 'Sarene Aleevy', 'Sarene Aleevy');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('archive.org', 'Jeanette Thackham', 'Jeanette Thackham', 'Jeanette Thackham');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('mysql.com', 'Creight McGarry', 'Creight McGarry', 'Creight McGarry');
+insert into Event_results (Result_link, Winner_Female, Winner_Male, Overall_winner) values ('sciencedaily.com', 'Alfy Maciaszek', 'Alfy Maciaszek', 'Alfy Maciaszek');
 
 insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (1, 'F', 1, null, 37, 'Moyra Lohoar', 'ID', 82, 989);
 insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (2, 'M', 2, null, 45, 'Perren Elverston', 'VE', 92, 921);
