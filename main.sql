@@ -108,7 +108,7 @@ CREATE TABLE Winners (
 
 /*Points*/
 DROP TABLE IF EXISTS Points;
-
+-- loaded
 CREATE TABLE Points (
     Participant_ID  INT PRIMARY KEY, 
     Gender_category VARCHAR(2) NOT NULL,
@@ -163,6 +163,106 @@ CREATE TABLE Presidium2 (
     Quote VARCHAR(150)
 );
 
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (1, 'F', 1, null, 37, 'Moyra Lohoar', 'ID', 82, 989);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (2, 'M', 2, null, 45, 'Perren Elverston', 'VE', 92, 921);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (3, 'F', 3, null, 47, 'Karlie Hilland', 'FR', 55, 928);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (4, 'F', 4, null, 9, 'Genvieve Steedman', 'CN', 7, 909);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (5, 'M', 5, null, 46, 'Meredith Brosini', 'PE', 93, 992);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (6, 'M', 6, null, 77, 'Rutledge Wooddisse', 'CN', 9, 980);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (7, 'M', 7, null, 34, 'Herve Gallety', 'ID', 57, 913);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (8, 'F', 8, null, 21, 'Harriette Angeli', 'BR', 84, 909);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (9, 'M', 9, null, 26, 'Dalli Calcutt', 'PS', 62, 930);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (10, 'F', 10, null, 10, 'Romy Cornell', 'ID', 36, 931);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (11, 'F', 11, null, 63, 'Vivianna Middle', 'CN', 71, 944);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (12, 'M', 12, null, 1, 'Hanson Nutbrown', 'LY', 24, 972);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (13, 'F', 13, null, 79, 'Sigrid Sammonds', 'MA', 77, 999);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (14, 'M', 14, null, 80, 'Sampson Deverale', 'AR', 17, 994);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (15, 'F', 15, null, 84, 'Concettina Coleborn', 'FR', 87, 988);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (16, 'M', 16, null, 79, 'Frederick Upson', 'RU', 63, 917);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (17, 'M', 17, null, 92, 'Jae Vogt', 'RS', 47, 973);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (18, 'F', 18, null, 75, 'Alvinia Gery', 'CN', 52, 976);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (19, 'M', 19, null, 66, 'Skyler Santostefano.', 'UA', 60, 926);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (20, 'M', 20, null, 87, 'Emile Poppleston', 'VN', 41, 980);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (21, 'F', 21, null, 92, 'Berty Sunnex', 'AF', 41, 900);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (22, 'M', 22, null, 79, 'Tymon Strewther', 'CA', 95, 933);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (23, 'F', 23, null, 59, 'Bidget Dodds', 'CN', 4, 959);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (24, 'M', 24, null, 5, 'Lombard Penwarden', 'ID', 5, 972);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (25, 'M', 25, null, 19, 'Merv Brunesco', 'ZA', 20, 961);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (26, 'M', 26, null, 79, 'Raimund Kittredge', 'GL', 50, 958);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (27, 'F', 27, null, 24, 'Sarene Aleevy', 'CN', 78, 934);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (28, 'F', 28, null, 59, 'Jeanette Thackham', 'PT', 84, 947);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (29, 'M', 29, null, 80, 'Creight McGarry', 'DE', 60, 945);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (30, 'M', 30, null, 62, 'Alfy Maciaszek', 'UA', 100, 921);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (31, 'F', 19, null, 39, 'Maybelle Blincow', 'RU', 24, 544);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (32, 'M', 38, null, 35, 'Cristiano Kivelle', 'UA', 4, 545);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (33, 'F', 92, null, 30, 'Corina Attlee', 'RS', 32, 629);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (34, 'F', 82, null, 60, 'Michelina Beswetherick', 'NL', 57, 23);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (35, 'F', 48, null, 32, 'Amanda Rolley', 'IL', 81, 314);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (36, 'F', 2, null, 11, 'Tamera Gatland', 'IR', 4, 113);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (37, 'M', 94, null, 43, 'Gianni MacQueen', 'US', 29, 757);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (38, 'M', 30, null, 18, 'Crichton Moulster', 'AR', 4, 543);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (39, 'M', 33, null, 95, 'Culver Patry', 'HN', 65, 25);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (40, 'F', 98, null, 43, 'Velma Alsford', 'PT', 90, 558);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (41, 'F', 26, null, 55, 'Agnese Rabbage', 'BR', 82, 365);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (42, 'M', 54, null, 59, 'Wilbert Bertl', 'SE', 2, 471);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (43, 'F', 96, null, 50, 'Annabelle Jozefowicz', 'PL', 43, 831);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (44, 'F', 7, null, 21, 'Kali Paynes', 'BR', 11, 595);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (45, 'M', 33, null, 83, 'Mata Devonside', 'PH', 65, 506);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (46, 'M', 10, null, 14, 'Grant Casetta', 'SB', 14, 475);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (47, 'M', 31, null, 56, 'Barnaby Jonin', 'KZ', 86, 860);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (48, 'M', 65, null, 51, 'Erhart Cordall', 'VE', 78, 336);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (49, 'M', 37, null, 54, 'Johnny Robshaw', 'PT', 92, 194);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (50, 'F', 9, null, 25, 'Nanni Shoppee', 'CN', 99, 544);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (51, 'F', 46, null, 92, 'Kristal Midgley', 'CN', 33, 624);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (52, 'M', 74, null, 43, 'Brnaby Murthwaite', 'FR', 85, 873);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (53, 'F', 38, null, 46, 'Gilda Heigl', 'CA', 65, 235);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (54, 'F', 1, null, 89, 'Lorita Spaduzza', 'CN', 36, 580);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (55, 'F', 88, null, 10, 'Joyann Gottschalk', 'US', 79, 728);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (56, 'M', 86, null, 9, 'Erick McVey', 'BR', 24, 69);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (57, 'M', 55, null, 83, 'Evelin Bramley', 'PT', 82, 889);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (58, 'F', 33, null, 76, 'Helge Dobel', 'SE', 52, 222);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (59, 'F', 35, null, 22, 'Marci McPhillimey', 'TH', 35, 189);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (60, 'F', 4, null, 24, 'Hilary Twaits', 'ID', 80, 651);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (61, 'M', 43, null, 53, 'Brigham Scutts', 'BO', 32, 589);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (62, 'F', 7, null, 99, 'Alidia Brager', 'CN', 93, 619);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (63, 'F', 49, null, 2, 'Jeannine McKenzie', 'CN', 40, 148);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (64, 'M', 50, null, 87, 'Mick Macoun', 'CN', 77, 27);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (65, 'M', 69, null, 79, 'Hendrick Mc Cahey', 'FR', 29, 234);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (66, 'M', 26, null, 54, 'Pieter Hastilow', 'TZ', 5, 709);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (67, 'F', 82, null, 72, 'Maighdiln Aldrich', 'UA', 33, 560);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (68, 'F', 82, null, 57, 'Kaylil Cahn', 'CN', 62, 753);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (69, 'F', 65, null, 45, 'Keelia Hucke', 'PH', 36, 578);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (70, 'F', 50, null, 5, 'Hanny Dunsmore', 'CN', 15, 812);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (71, 'M', 23, null, 85, 'Carr Todarello', 'ID', 39, 810);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (72, 'M', 85, null, 28, 'Andrew Ilyas', 'CN', 68, 531);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (73, 'F', 98, null, 73, 'Evangeline Jantzen', 'SI', 58, 90);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (74, 'M', 36, null, 99, 'Eliot Casaccio', 'RU', 50, 458);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (75, 'F', 51, null, 4, 'Debera Tutchings', 'PT', 72, 230);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (76, 'F', 88, null, 13, 'Romy Ambrodi', 'CN', 52, 692);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (77, 'F', 89, null, 60, 'Olly Pergens', 'CN', 35, 183);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (78, 'F', 15, null, 11, 'Jorrie Bohler', 'PT', 52, 396);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (79, 'M', 40, null, 14, 'Glen Glason', 'CN', 41, 487);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (80, 'M', 17, null, 100, 'Clemens Acors', 'US', 99, 39);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (81, 'M', 76, null, 83, 'Christopher Penright', 'US', 28, 875);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (82, 'F', 29, null, 96, 'Tuesday Rumbold', 'NC', 23, 347);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (83, 'F', 69, null, 32, 'Faith Winters', 'AR', 16, 200);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (84, 'M', 51, null, 48, 'Godfry Blazek', 'CN', 98, 140);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (85, 'F', 36, null, 32, 'Kate Ellacombe', 'NC', 98, 509);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (86, 'F', 90, null, 51, 'Joycelin Kilgrew', 'US', 29, 216);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (87, 'F', 35, null, 100, 'Robby Hallatt', 'PL', 40, 330);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (88, 'M', 4, null, 38, 'Fraser Berrisford', 'PL', 78, 807);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (89, 'M', 56, null, 32, 'Gordon Tearney', 'RU', 15, 879);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (90, 'F', 32, null, 78, 'Gussie Greenside', 'DO', 14, 487);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (91, 'F', 65, null, 13, 'Mag Felkin', 'FI', 86, 86);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (92, 'F', 99, null, 70, 'Lynna Jedrzaszkiewicz', 'AR', 22, 276);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (93, 'M', 29, null, 40, 'Smith Stonhewer', 'ID', 80, 695);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (94, 'M', 37, null, 76, 'Allyn Vasquez', 'CN', 43, 146);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (95, 'F', 46, null, 37, 'Alethea Aish', 'PH', 28, 305);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (96, 'F', 19, null, 87, 'Ethelin Wreford', 'AR', 98, 365);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (97, 'M', 18, null, 13, 'Basil Doldon', 'DE', 87, 124);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (98, 'F', 37, null, 2, 'Elana Daout', 'RU', 47, 366);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (99, 'M', 74, null, 78, 'Flory Corradino', 'TZ', 12, 791);
+insert into Points (Participant_ID, Gender_category, Event_ID, Penalty_points, Bonus_points, Participant_Name, Country_code, Special_points, Total_points) values (100, 'F', 71, null, 51, 'Horatia Harmes', 'CN', 39, 508);
 
 insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2012, 'Moyra Lohoar', 'Ireland', 'ID', null, 989);
 insert into Country_ranking (Year, Championship_name, Country_name, Country_code, Country_flag, Average_points) values (2010, 'Perren Elverston', 'South Africa', 'VE', null, 921);
