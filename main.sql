@@ -1,8 +1,3 @@
-/*Creating and defining the tables*/
-DROP DATABASE IF EXISTS SaunasHotTub;
-CREATE DATABASE SaunasHotTub;
-USE SaunasHotTub;
-
 
 /*Events*/
 DROP TABLE IF EXISTS Events;
