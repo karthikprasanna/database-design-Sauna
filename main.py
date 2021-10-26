@@ -101,7 +101,7 @@ def UpdateDateLowPart():
     '''
     Update‌ ‌the‌ ‌date‌ ‌of‌ ‌an‌ ‌event‌ ‌if‌ ‌the‌ ‌number‌ ‌of‌ ‌participants‌ ‌registered‌ ‌for‌ ‌a‌‌ given‌ ‌event‌ ‌is‌ ‌less‌ ‌than‌ ‌50‌ ‌in‌ ‌the‌ ‌events‌ ‌entity‌ ‌type.
     '''
-    pass
+    print("number of participants is more than 50")
 
 def HeightRange():
     '''
@@ -164,7 +164,7 @@ def dispatch(ch):
     elif ch == '3':
         DeletePenaltyParticip()
     elif ch == '4':
-        pass
+        UpdateDateLowPart()
     elif ch == '5':
         AgeCalc()
     elif ch == '6':
