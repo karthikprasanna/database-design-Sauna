@@ -3,16 +3,18 @@ from datetime import date
 today = date.today()
 
 connection = sqlite3.connect("SaunasHotTub.db")
-print("database connected")
+
 
 cursor = connection.cursor()
 
 sql_file = open("main.sql")
 sql_as_string = sql_file.read()
 sql_file.close()
+print("The database is loading, this may take a while...")
 
 cursor.executescript(sql_as_string)
 connection.commit()
+print("database connected")
 
 def AddWinner():
     """
