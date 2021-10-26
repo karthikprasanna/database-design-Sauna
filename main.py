@@ -11,8 +11,8 @@ sql_file = open("main.sql")
 sql_as_string = sql_file.read()
 sql_file.close()
 
-# cursor.executescript(sql_as_string)
-# connection.commit()
+cursor.executescript(sql_as_string)
+connection.commit()
 
 def AddWinner():
     """
