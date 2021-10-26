@@ -51,7 +51,7 @@ def Hotel():
     query = "SELECT Hotel_name, Website FROM Accomodation2 WHERE Bookings >= 20"
     opt = cursor.execute(query)
     for row in opt:
-        q2 = "UPDATE Hotels SET vacancy = 0 WHERE Website = {}".format(row[1])
+        q2 = "UPDATE Hotels SET vacancy = 0 WHERE Website = \'{}\'".format(row[1])
         cursor.execute(q2)
     print("Vacancy has been set to 0")
     connection.commit()
