@@ -1,4 +1,6 @@
 import sqlite3
+from datetime import date
+today = date.today()
 
 connection = sqlite3.connect("SaunasHotTub.db")
 print("database connected")
@@ -42,11 +44,40 @@ points‌ ‌found‌ ‌in‌ ‌the‌ ‌points‌ ‌entity‌ ‌type.
         connection.commit()
         print("Winner has been added.")
 
-def AddHotel():
+def Hotel():
     '''
     Addition‌ ‌of‌ ‌a‌ ‌new‌ ‌hotel‌ ‌in‌ ‌the‌ ‌accommodation‌ ‌entity‌ ‌type‌ ‌if‌ ‌the‌ ‌number‌ ‌of‌‌ vacant‌ ‌rooms‌ ‌>=‌ ‌20
     '''
-    query = "SELECT * FROM Hotels "
+    query = "SELECT Hotel_name, Website FROM Accomodation2 WHERE Bookings >= 20"
+    opt = cursor.execute(query)
+    for row in opt:
+        q2 = "UPDATE Hotels SET vacancy = 0 WHERE Website = {}".format(row[1])
+        cursor.execute(q2)
+    print("Vacancy has been set to 0")
+    connection.commit()
+    
+def AgeCalc():
+    '''
+     Ask‌ ‌and‌ ‌update‌ ‌the‌ ‌age‌ ‌of‌ ‌the‌ ‌participant‌ ‌whenever‌ ‌a‌ ‌new‌ ‌entity‌ ‌is‌ ‌being‌‌ added‌ ‌to‌ ‌the‌ ‌events.
+    '''
+    q1 = "SELECT Participant_ID, Date_of_birth from Participants"
+    print(q1)
+    opt = cursor.execute(q1)
+    for row in opt:
+        dob = row[1].split('-')
+        age = today.year - dob[0] - ((today.month, today.day) < (dob[2], dob[1]))
+        q2 = "UPDATE Participants SET Age = {} WHERE Participant_ID = {}".format(age,row[0])
+        cursor.execute(q2)
+    connection.commit()
+    print("The particpants' ages have been updated")
+
+def EventMaxPoints():
+    '''
+    Select‌ ‌200‌ ‌tuples‌ ‌in‌ ‌the‌ ‌events,‌ ‌in‌ ‌which‌ ‌the‌ ‌particpant’s‌ ‌points‌ ‌in‌ ‌the‌ ‌points‌‌ entity‌ ‌type‌ ‌is‌ ‌maximum.
+    '''
+    q1 = "SELECT DISTINCT(e.Event_ID), DISTINCT(e.Event_name) FROM Events e, Points p WHERE e.Event_ID = p.Event_ID ORDER BY p.Total_points DESC LIMIT 400"
+    print(q1)
+    opt = cursor.execute(q1)
 
 def DeletePenaltyParticip():
     '''
@@ -129,15 +160,15 @@ def dispatch(ch):
     if ch == '1':
         AddWinner()
     elif ch == '2':
-        pass
+        Hotel()
     elif ch == '3':
         DeletePenaltyParticip()
     elif ch == '4':
         pass
     elif ch == '5':
-        pass
+        AgeCalc()
     elif ch == '6':
-        pass
+        EventMaxPoints()
     elif ch =='7':
         ListParticipants()
     elif ch == '8':
