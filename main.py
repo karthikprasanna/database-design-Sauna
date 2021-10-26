@@ -65,7 +65,7 @@ def AgeCalc():
     opt = cursor.execute(q1)
     for row in opt:
         dob = row[1].split('-')
-        age = today.year - dob[0] - ((today.month, today.day) < (dob[2], dob[1]))
+        age = today.year - int(dob[0]) - ((today.month, today.day) < (int(dob[2]), int(dob[1])))
         q2 = "UPDATE Participants SET Age = {} WHERE Participant_ID = {}".format(age,row[0])
         cursor.execute(q2)
     connection.commit()
@@ -75,9 +75,11 @@ def EventMaxPoints():
     '''
     Select‌ ‌200‌ ‌tuples‌ ‌in‌ ‌the‌ ‌events,‌ ‌in‌ ‌which‌ ‌the‌ ‌particpant’s‌ ‌points‌ ‌in‌ ‌the‌ ‌points‌‌ entity‌ ‌type‌ ‌is‌ ‌maximum.
     '''
-    q1 = "SELECT DISTINCT(e.Event_ID), DISTINCT(e.Event_name) FROM Events e, Points p WHERE e.Event_ID = p.Event_ID ORDER BY p.Total_points DESC LIMIT 400"
+    q1 = "SELECT Event_ID, Total_points FROM Points ORDER BY Total_points DESC LIMIT 200"
     print(q1)
     opt = cursor.execute(q1)
+    for row in opt: 
+    	print(row[0], row[1])
 
 def DeletePenaltyParticip():
     '''
