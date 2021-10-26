@@ -42,6 +42,62 @@ points‌ ‌found‌ ‌in‌ ‌the‌ ‌points‌ ‌entity‌ ‌type.
         connection.commit()
         print("Winner has been added.")
 
+def AddHotel():
+    '''
+    Addition‌ ‌of‌ ‌a‌ ‌new‌ ‌hotel‌ ‌in‌ ‌the‌ ‌accommodation‌ ‌entity‌ ‌type‌ ‌if‌ ‌the‌ ‌number‌ ‌of‌‌ vacant‌ ‌rooms‌ ‌>=‌ ‌20
+    '''
+    query = "SELECT * FROM Hotels "
+
+def DeletePenaltyParticip():
+    '''
+    Deletion‌ ‌of‌ ‌the‌ ‌athlete‌ ‌from‌ ‌the‌ ‌participant’s‌ ‌list‌ ‌if‌ ‌the‌ ‌penalty‌ ‌points‌ ‌>=‌ ‌100,‌‌from‌ ‌the‌ ‌points‌ ‌entity‌ ‌type.‌
+    '''
+    query = "SELECT Participant_ID, Participant_Name FROM Points WHERE Penalty_points >= 100"
+    print(query)
+    opt = cursor.execute(query)
+    for row in opt: 
+        print(row[0], row[1])
+        q2 = "DELETE FROM Participants WHERE Participant_ID = {}".format(row[0])
+        cursor.execute(q2)
+    q3 = "DELETE FROM Points WHERE Penalty_points >=100"
+    
+    #query2 = "DELETE FROM Points p JOIN Participants pa ON pa.Participant_ID = p.Participant_ID WHERE p.Penalty_points >= 100';"
+    #cursor.execute(query2)
+    connection.commit()
+    print("Participants have been deleted from the database")
+
+def UpdateDateLowPart():
+    '''
+    Update‌ ‌the‌ ‌date‌ ‌of‌ ‌an‌ ‌event‌ ‌if‌ ‌the‌ ‌number‌ ‌of‌ ‌participants‌ ‌registered‌ ‌for‌ ‌a‌‌ given‌ ‌event‌ ‌is‌ ‌less‌ ‌than‌ ‌50‌ ‌in‌ ‌the‌ ‌events‌ ‌entity‌ ‌type.
+    '''
+    pass
+
+def HeightRange():
+    '''
+    Count‌ ‌and‌ ‌nominate‌ ‌all‌ ‌the‌ ‌participants‌ ‌for‌ ‌the‌ ‌next‌ ‌event‌ ‌whose‌ ‌height‌ ‌is‌ ‌in‌‌ the‌ ‌range‌ ‌of‌ ‌140‌ ‌-‌ ‌160‌ ‌cm.
+    '''
+    query = "SELECT Participant_ID, Participant_Name FROM Participants WHERE Height >= 140 and Height <= 160"
+    print(query)
+    opt = cursor.execute(query)
+    for row in opt:
+        print(row[0], row[1])
+    
+    #query2 = "SELECT COUNT(*) FROM Participants WHERE Height >= 140 and Height <= 160"
+    #print(query2)
+    #count = cursor.execute(query2)
+    #print("Count: ", count)
+
+def AusHeight():
+    '''
+    Search‌ ‌for‌ ‌any‌ ‌Australian‌ ‌male‌ ‌participant‌ ‌whose‌ ‌height‌ ‌is‌ ‌150‌ ‌cm.
+    '''
+    query = "SELECT Participant_ID, Participant_Name FROM Participants WHERE Country = 'Australia' and Height = 150 and Gender_category = 'M'"
+    print(query)
+    cursor.execute(query)
+    for row in cursor: 
+        print(row[0], row[1])
+
+	
 def DisplayName():
     '''
 	Display‌ ‌the‌ ‌names‌ ‌of‌ ‌all‌ ‌the‌ ‌participants‌ ‌based‌ ‌on‌ ‌their‌ ‌country‌ ‌name.‌
@@ -72,10 +128,24 @@ def dispatch(ch):
 
     if ch == '1':
         AddWinner()
+    elif ch == '2':
+        pass
+    elif ch == '3':
+        DeletePenaltyParticip()
+    elif ch == '4':
+        pass
+    elif ch == '5':
+        pass
+    elif ch == '6':
+        pass
     elif ch =='7':
         ListParticipants()
     elif ch == '8':
         DisplayName()
+    elif ch == '9':
+        HeightRange()
+    elif ch == '10':
+        AusHeight()
     else:
         print("Error: Invalid Option")
 
