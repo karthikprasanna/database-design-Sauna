@@ -1,3 +1,10 @@
+## Database Design for Sauna Heating World Championship
+- Requirements Gathering
+- Entity-Relationship Model
+- Relational Database Model
+- Final Coding phase of the database
+- Testin Database
+
 ## List of all commands run, and their descriptions
 
 1. Inclusion‌ ‌of‌ ‌the‌ ‌winner‌ ‌in‌ ‌the‌ ‌Events‌ ‌entity‌ ‌type‌ ‌based‌ ‌on‌ ‌the‌ ‌maximum‌ ‌total‌‌
